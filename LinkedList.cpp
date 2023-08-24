@@ -32,6 +32,7 @@ void insertAfter(struct Node *prevNode, int nodeData)
     newNode1->next = prevNode->next;
     prevNode->next = newNode1;
 }
+
 void append(struct Node **head, int nodeData)
 {
     // creating the new node

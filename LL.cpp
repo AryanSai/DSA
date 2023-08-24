@@ -11,17 +11,17 @@ void displayList(struct Node *node)
 {
     while (node != NULL)
     {
-        cout << node->value << "->";
+        cout << node->value << " -> ";
         node = node->next;
     }
 
     if (node == NULL)
     {
-        cout << "NULL";
+        cout << "NULL \n";
     }
 }
 
-void append(struct Node **head, int data)
+void insertBack(struct Node **head, int data)
 {
     struct Node *newNode = new Node;
     newNode->value = data;
@@ -41,11 +41,20 @@ void append(struct Node **head, int data)
     return;
 }
 
+void insertFront(struct Node **head, int data)
+{
+    struct Node *newNode = new Node;
+    newNode->value = data;
+    newNode->next = *head;
+    *head = newNode;
+}
+
 int main()
 {
     struct Node *head = NULL;
 
-    append(&head, 12);
+    insertBack(&head, 12);
+    insertFront(&head, 11);
     displayList(head);
     return 0;
 }
