@@ -1,7 +1,8 @@
+package Done;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class Valid {
+public class Problem20 {
 
     static boolean isValid(String s) {
         HashMap<Character, Character> hm = new HashMap<>();
