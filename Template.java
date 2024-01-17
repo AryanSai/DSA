@@ -5,8 +5,6 @@ class Template {
     }
 
     public static void main(String[] args) {
-        boolean bool = todo();
-
-        System.out.println(bool);
+        System.out.println(todo());
     }
 }

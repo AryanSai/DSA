@@ -20,6 +20,6 @@ class Problem14 {
 
     public static void main(String[] args) {
         String strs[] = { "sai", "sal", "sad", "sat", "sas" };
-
+        longestCommonPrefix(strs);
     }
 }
