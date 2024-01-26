@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Try {
     public static void main(String[] args) {
-        List<String> arr = new ArrayList<String>();
-        arr.add("un");
-        arr.add("iq");
-        arr.add("ue");
-        System.out.println(arr.get(0));
+        String sai = "acbd";
+        char[] ch = sai.toCharArray();
+        Arrays.sort(ch);
+        System.out.println(ch);
     }
 }
