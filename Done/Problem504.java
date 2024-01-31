@@ -1,3 +1,4 @@
+package Done;
 class Problem504 {
     static boolean checkPerfectNumber(int num) {
         int i = 1, sum = 0;

@@ -1,3 +1,4 @@
+package Done;
 class Problem896 {
     static boolean isMonotonic(int[] nums) {
         int inc = 0, dec = 0;

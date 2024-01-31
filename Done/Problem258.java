@@ -1,3 +1,4 @@
+package Done;
 // Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
 class Problem258 {
     static int addDigits(int num) {

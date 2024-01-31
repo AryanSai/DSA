@@ -1,3 +1,4 @@
+package Done;
 class Problem796 {
     static boolean rotateString(String s, String goal) {
         StringBuilder sb = new StringBuilder(s);

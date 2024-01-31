@@ -1,3 +1,4 @@
+package Done;
 class Problem263 {
     static boolean isUgly(int n) {
         if (n == 0) {
