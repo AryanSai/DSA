@@ -11,12 +11,12 @@ package ToDO;
 // Input: temperatures = [30,60,90]
 // Output: [1,1,0]
 
-import java.util.Stack;
+// import java.util.Stack;
 
 class Problem739 {
     static int[] dailyTemperatures(int[] temp) {
         int[] answer = new int[temp.length];
-        Stack<Integer> stack = new Stack<>();
+        // Stack<Integer> stack = new Stack<>();
         
         return answer;
     }
