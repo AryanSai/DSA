@@ -22,13 +22,7 @@ public class Problem290 {
             return false;
         }
         for (int i = 0; i < tokens.length;) {
-            if (ht.containsKey(pattern.charAt(i))) {
-                if (ht.get(pattern.charAt(i)).equals(tokens[i])) {
-                    i++;
-                } else {
-                    return false;
-                }
-            }
+            
         }
         return true;
     }
