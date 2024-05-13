@@ -1,7 +1,7 @@
 
 public class Try {
     public static void main(String[] args) {
-       String n ="sairma";
-       System.out.println(n.contains("a"));
+       int i=1;
+       System.out.println(i^1);
     }
 }
