@@ -17,8 +17,8 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {
-    }
+    // ListNode() {
+    // }
 
     ListNode(int val) {
         this.val = val;
@@ -30,7 +30,7 @@ class ListNode {
     }
 }
 
-class Problem786 {
+public class Problem786 {
     static ListNode middleNode(ListNode head) {
         HashMap<Integer, ListNode> ht = new HashMap<>();
         int count = 0;
