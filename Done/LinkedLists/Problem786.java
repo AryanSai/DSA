@@ -13,24 +13,7 @@ package Done.LinkedLists;
 
 import java.util.HashMap;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class Problem786 {
+public class Problem786 {
     static ListNode middleNode(ListNode head) {
         HashMap<Integer, ListNode> ht = new HashMap<>();
         int count = 0;

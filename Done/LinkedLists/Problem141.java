@@ -8,16 +8,6 @@ package Done.LinkedLists;
 
 import java.util.HashMap;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
 class Problem141 {
     public static boolean hasCycle(ListNode head) {
         HashMap<ListNode, Integer> ht = new HashMap<>();
