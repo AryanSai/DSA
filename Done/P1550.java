@@ -1,3 +1,5 @@
+package Done;
+
 class P1550 {
     static boolean todo(int[] nums) {
         int i=0;
