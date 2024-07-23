@@ -1,4 +1,4 @@
-package Done;
+package Done.BitManip;
 public class P1404 {
     static int numSteps(String s) {
         int num = Integer.parseInt(s, 2), count = 0;

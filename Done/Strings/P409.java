@@ -1,4 +1,4 @@
-package Done;
+package Done.Strings;
 import java.util.*;
 
 class P409 {

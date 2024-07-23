@@ -1,4 +1,4 @@
-package Done;
+package Done.Matrices;
 class P861 {
     static int rowNum(int[] row) {
         int num = 0;
