@@ -1,6 +1,6 @@
 package BinaryTreeDS;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 class TreeNode {
     int val;
@@ -15,7 +15,7 @@ class TreeNode {
 }
 
 public class DFS {
-    public static boolean dfs(TreeNode root, int x, List<Integer> path) {
+    static boolean dfs(TreeNode root, int x, List<Integer> path) {
         if (root == null)
             return false;
         // since not null, add it to the path list
