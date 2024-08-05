@@ -58,6 +58,7 @@ class BinaryTernarySearch {
     
     public static void main(String[] args) {
         int[] nums = array(100000000);
+        System.out.println(binsearch(nums, 3));
         System.out.println(ternarysearch(nums, 3));
     }
 }

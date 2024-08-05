@@ -3,6 +3,8 @@ package Algorithmica;
 class RightMostIndex {
 
     //TC: O(log n), SC: O(1)
+    //ceiling has to be done here coz we are interested in the upper limit
+    //and (l+u)/2 floors the value but we want the ceil 
     static int search(int[] nums, int target) {
         int mid, l = 0, u = nums.length - 1;
         while (l < u) {
