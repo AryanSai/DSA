@@ -1,3 +1,4 @@
+package Algorithmica.AdHoc;
 import java.util.Arrays;
 
 class FindDuplicates {

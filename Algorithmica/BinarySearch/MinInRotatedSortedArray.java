@@ -1,4 +1,4 @@
-package Algorithmica;
+package Algorithmica.BinarySearch;
 
 public class MinInRotatedSortedArray {
 

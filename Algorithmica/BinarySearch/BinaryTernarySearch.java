@@ -1,4 +1,4 @@
-package Algorithmica;
+package Algorithmica.BinarySearch;
 // import java.util.Arrays;
 
 class BinaryTernarySearch {
