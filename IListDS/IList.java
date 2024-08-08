@@ -1,4 +1,4 @@
-package IList;
+package IListDS;
 
 public interface IList {
     void addLast(int x);
