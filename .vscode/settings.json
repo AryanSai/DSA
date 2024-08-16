@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "unordered_map": "cpp"
     },
     "java.debug.settings.onBuildFailureProceed": true,
     "java.format.settings.url": "eclipse-formatter.xml"
