@@ -1,3 +1,4 @@
+package Algorithmica;
 class Template {
     static boolean todo() {
         return true;
