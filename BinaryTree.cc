@@ -30,6 +30,17 @@ public:
     {
     }
 
+    vector<int> sol;
+
+    vector<int> preorderTraversalRecursion(Node* root) {
+        if(root!=nullptr){
+            sol.push_back(root->val);
+            preorderTraversalRecursion(root->left);
+            preorderTraversalRecursion(root->right);
+        }
+        return sol;
+    }
+
     vector<int> levelOrder(Node *root)
     {
         vector<int> sol;
