@@ -1,49 +1,36 @@
 #include <iostream>
 #include <vector>
-#include <unordered_set>
+#include <unordered_map>
+#include <algorithm>
 using namespace std;
 
-int findNearestMissing(unordered_set<int> &used, int x)
+unordered_map<int, int> nextAvailable;
+
+int find(int x)
 {
-    int offset = 0;
-    while (true)
+    if (!nextAvailable.count(x))
     {
-        if (!used.count(x + offset))
-            return x + offset;
-        ++offset;
+        nextAvailable[x] = x + 1;
+        return x;
     }
+    return nextAvailable[x] = find(nextAvailable[x]);
 }
 
 int makeArrayDistinct(vector<int> &size, vector<int> &cost)
 {
+    nextAvailable.clear();
     vector<pair<int, int>> shoes;
-    for (int i = 0; i < size.size(); i++)
-        shoes.push_back({size[i], cost[i]});
+    int n = size.size();
+    for (int i = 0; i < n; i++)
+        shoes.emplace_back(cost[i], size[i]);
 
-    sort(shoes.begin(), shoes.end(), [](const pair<int, int> &a, const pair<int, int> &b)
-         {
-        if(a.first == b.first)
-            return a.second < b.second;
-        return a.first > b.first; });
+    sort(shoes.begin(), shoes.end()); // Sort by cost ascending
 
-    unordered_set<int> usedSizes;
     int total = 0;
-
-    for (auto &p : shoes)
+    for (auto [c, s] : shoes)
     {
-        int s = p.first;
-        int c = p.second;
-
-        if (usedSizes.count(s))
-        {
-            int newS = findNearestMissing(usedSizes, s);
-            total += (newS - s) * c;
-            usedSizes.insert(newS);
-        }
-        else
-        {
-            usedSizes.insert(s);
-        }
+        int newS = find(s);
+        total += (newS - s) * c;
     }
     return total;
 }
